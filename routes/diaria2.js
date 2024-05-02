@@ -11,7 +11,7 @@ router.post("/agregar",[
     check("codigo","El codigo es obligatorio").not().isEmpty(),
     check("usuario","El usuario es obligatorio").not().isEmpty(),
     check("contrasena","La contraseña es obligatoria").not().isEmpty(),
-    check("imagen","La imagen es obligatoria").not().isEmpty(),
+    check("imagen", "La imagen es obligatoria").notEmpty(),
     check("descripcion","La descripcion es obligatoria").not().isEmpty(),
     check("programa","El programa es obligatorio"),
     validarcampos
@@ -21,7 +21,7 @@ router.put("/modificar",[
     check("codigo","El codigo es obligatorio").not().isEmpty(),
     check("usuario","El usuario es obligatorio").not().isEmpty(),
     check("contrasena","La contraseña es obligatoria").not().isEmpty(),
-    check("imagen","La imagen es obligatoria").not().isEmpty(),
+    check("imagen", "La imagen es obligatoria").notEmpty(),
     check("descripcion","La descripcion es obligatoria").not().isEmpty(),
     check("programa","El programa es obligatorio"),
     validarcampos

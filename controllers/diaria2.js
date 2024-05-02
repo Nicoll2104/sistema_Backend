@@ -2,8 +2,15 @@ import Diaria2 from "../models/diaria2.js";
 
 const httpDiaria2 = {
     getDiaria: async (req,res) =>{
-        const diarias = await Diaria2.find()
+        try {
+            console.log('a');
+            const diarias = await Diaria2.find()
+            console.log(diarias);
         res.json(diarias);
+        } catch (error) {
+            console.log(error);
+        }
+        
     },
 
     postDiaria: async (req,res)=>{

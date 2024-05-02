@@ -3,7 +3,7 @@ import 'dotenv/config';
 import cors from 'cors'
 import mongoose from "mongoose";
 import diaria from './routes/diaria.js';
-import diaria2 from './models/diaria2.js';
+import diaria2 from './routes/diaria2.js';
 
 
 mongoose.connect(process.env.mongoDB)
